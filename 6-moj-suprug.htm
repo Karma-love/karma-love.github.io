@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="ru-RU" xmlns:og="http://ogp.me/ns#" itemscope="" itemtype="http://schema.org/Article" class="">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width">
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="img/favicon-8.png">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>Урок 6. Мой супруг</title>
+
+<link rel="stylesheet" type="text/css" media="all" id="wpm-bootstrap-css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" media="all" id="wpm-base-style-css" href="css/base-styles.css">
+<link rel="stylesheet" type="text/css" media="all" id="wpm-protected-style-css" href="css/base-protected-page.css">
+<link rel="stylesheet" type="text/css" media="all" id="wpm-owl-css" href="css/owl.css">
+<link rel="stylesheet" type="text/css" media="all" id="wpm-mediaelement-skins-css" href="css/wpm-skins.css">
+<link rel="stylesheet" type="text/css" media="all" id="wpm-mediaelement-skins-css" href="css/boxes.css">
+
+    <style type="text/css">
+        body{
+            background-color: #F7F8F9;
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-image: url('img/bg.jpg');
+            background-attachment:  fixed;
+        }
+        .wpm-button {
+            border-radius: 3px !important;
+        }
+        .wpm-comments-wrap {
+            border-radius: 3px;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            -khtml-border-radius: 3px;
+            background-color: #FFFFFF;
+            border: 1px solid #D3D9DF;
+        }
+
+        .wpm-content-inner-wrap {
+            background-color: #FFFFFF;
+            border: 1px solid #D3D9DF;
+            border-radius: 3px;
+        }
+        .wpm-content-wrap .loader, .loader {
+            border: 1px solid #D3D9DF!important;
+            background-color: #FFFFFF!important;
+        }
+        .table-head, tr.table-head td {
+            background-color: #7F8399;
+            color: #FFFFFF;
+        }
+
+        .wpm-page-header{
+            background-color: #FBFCFC;
+            border-color: #997D46;
+            border-radius: 3px;
+
+        }
+        .wpm-page-header .title{
+            color: #000000!important;
+        }
+        .wpm-page-header .description{
+            color: #4A5363!important;
+        }
+        .wpm-page-header .col-label, .wpm-page-header .info-row [class^="icon-"], .wpm-page-header .info-row [class*=" icon-"]{
+            color: #99723F!important;
+        }
+        .col-info .description, .col-info .title{
+            border-color: #997D46;
+            color: #;
+        }
+        .homework-title, #comments-title{
+            border-color: #D3D9DF;
+        }
+
+        .table-head [class^="icon-"], .table-head [class*=" icon-"] {
+            color: #FFFFFF;
+        }
+
+        .post-row{
+            border-bottom: 1px solid #D3D9DF;
+        }
+        .post-row:nth-child(even) {
+            background-color: #FFFFFF;
+            color: #677C8A;
+        }
+        .post-row:nth-child(even):hover{
+            background-color: #FFFFFF;
+            color: #343D43;
+        }
+        .post-row:nth-child(odd) {
+            background-color: #F3F6F8;
+            color: #677C8A;
+        }
+        .post-row:nth-child(odd):hover{
+            background-color: #F3F6F8;
+            color: #343D43;
+        }
+        /* content */
+        .wpm-content{
+            border: 1px solid #D3D9DF;
+            background-color: #FFFFFF;
+            border-radius: 3px;
+        }
+        .wpm-content-text{
+            color: #333333!important;
+        }
+        .wpm-content-text a{
+            color: #428BCA!important;
+        }
+        .wpm-content-text a:hover, .wpm-content-text a:active{
+            color: #2A6496!important;
+        }
+
+        .wpm-content-wrap .loader {
+            border-radius: 3px;
+        }
+
+        /* menu */
+        .sidebar-col{
+            font-size: 14px;
+        }
+
+        .main-menu, .header-content, .footer-content{
+            background-color: #FFFFFF;
+            border-color: #D3D9DF;
+            border-radius: 3px;
+        }
+
+        .main-menu li > a, .main-menu .children li:first-child > a{
+            border-color: #D3D9DF;
+        }
+        .main-menu li:last-child .children li:first-child > a, .main-menu > li > ul li:last-child{
+            border-color: #D3D9DF;
+        }
+
+
+        .main-menu .plus{
+            border-color: #D3D9DF;
+            color: #D3D9DF;
+        }
+        .main-menu .plus:hover, .main-menu .current-cat > .plus{
+            border-color: #2C8BB7;
+            color: #2C8BB7;
+        }
+        .main-menu > li > a{
+            color: #000000 !important;
+            font-weight: normal;
+        }
+        .main-menu > li > a:hover{
+            color: #2C8BB7 !important;
+        }
+
+        .main-menu .current-cat > a, .main-menu .current_page_item > a {
+            color: #2B9973 !important;
+                    }
+
+        .main-menu .children a{
+            color: #919191 !important;
+            font-weight: normal;
+        }
+        .main-menu .children a:hover{
+            color: #2C8BB7 !important;
+        }
+
+        .main-menu .children .current-cat > a {
+            color: #2B9973 !important;
+        }
+        /* buttons */
+        .show-content{
+            border-color: #B73B8E;
+            color: #2C8BB7;
+            background-color: #F3F6F8;
+            border-radius: 3px;
+        }
+        .show-content:hover, .post-row:hover .show-content{
+            border-color: #2C8BB7;
+            color: #FFFFFF;
+            background-color: #2C8BB7;
+        }
+        .no-access{
+            border-color: #677C8A;
+            color: #677C8A;
+            background-color: #F3F6F8;
+            border-radius: 3px;
+        }
+        .no-access:hover, .post-row:hover .no-access{
+            border-color: #677C8A;
+            color: #FFFFFF;
+            background-color: #677C8A;
+        }
+        .back-button{
+            border-color: #2C8BB7;
+            color: #2C8BB7;
+            background-color: #F3F6F8;
+            border-radius: 3px;
+        }
+        .back-button:hover{
+            border-color: #2C8BB7;
+            color: #FFFFFF;
+            background-color: #2C8BB7;
+        }
+        /* */
+        .wpm-homework-respond-button{
+            border-color: #2C8BB7!important;
+            color: #2C8BB7!important;
+            background-color: #F3F6F8!important;
+            border-radius: 3px!important;
+        }
+        .wpm-homework-respond-button:hover{
+            border-color: #2C8BB7!important;
+            color: #FFFFFF!important;
+            background-color: #2C8BB7!important;
+        }
+        /* */
+        .wpm-respond-popup-button{
+            color: #FFFFFF!important;
+            background-color: #2C8BB7!important;
+            border-radius: 3px!important;
+        }
+        .wpm-respond-popup-button:hover{
+            color: #FFFFFF!important;
+            background-color: #00608C!important;
+        }
+
+        /* */
+        .wpm-homework-edit-button{
+            border-color: #2C8BB7!important;
+            color: #2C8BB7!important;
+            background-color: #F3F6F8!important;
+            border-radius: 3px!important;
+        }
+        .wpm-homework-edit-button:hover{
+            border-color: #2C8BB7!important;
+            color: #FFFFFF!important;
+            background-color: #2C8BB7!important;
+        }
+        /* */
+        .wpm-homework-edit-popup-button{
+            color: #FFFFFF!important;
+            background-color: #2C8BB7!important;
+            border-radius: 3px!important;
+        }
+        .wpm-homework-edit-popup-button:hover{
+            color: #FFFFFF!important;
+            background-color: #00608C!important;
+        }
+        /* add file button*/
+        .wpm-homework-edit-popup-addfile-button{
+            color: #2C8BB7!important;
+            background-color: #FFFFFF!important;
+            border-color: #2C8BB7!important;
+            border-radius: 3px!important;
+        }
+        .wpm-homework-edit-popup-addfile-button:hover{
+            color: #FFFFFF!important;
+            background-color: #2C8BB7!important;
+            border-color: #2C8BB7!important;
+        }
+        /* upload file button */
+        .wpm-homework-edit-popup-upload-button{
+            color: #2C8BB7!important;
+            background-color: #F9F9F9!important;
+            border-color: #2C8BB7!important;
+            border-radius: 3px!important;
+        }
+        .wpm-homework-edit-popup-upload-button:hover{
+            color: #FFFFFF!important;
+            background-color: #2C8BB7!important;
+            border-color: #2C8BB7!important;
+        }
+        /* cancel upload button */
+        .wpm-homework-edit-popup-cancel-button{
+            color: #2C8BB7!important;
+            background-color: #F9F9F9!important;
+            border-color: #2C8BB7!important;
+            border-radius: 3px!important;
+        }
+        .wpm-homework-edit-popup-cancel-button:hover{
+            color: #FFFFFF!important;
+            background-color: #2C8BB7!important;
+            border-color: #2C8BB7!important;
+        }
+        /* delete file button */
+        .wpm-homework-edit-popup-delete-button{
+            color: #2C8BB7!important;
+            background-color: #F9F9F9!important;
+            border-color: #2C8BB7!important;
+            border-radius: 3px!important;
+        }
+        .wpm-homework-edit-popup-delete-button:hover{
+            color: #FFFFFF!important;
+            background-color: #2C8BB7!important;
+            border-color: #2C8BB7!important;
+        }
+        /* refresh comments */
+        .refresh-comments{
+            color: #428BCA!important;
+        }
+        .refresh-comments:hover{
+            color: #2F71A9!important;
+        }
+        /* refresh comments */
+        .wpm-welcome-tab-login{
+            color: #2B9973!important;
+        }
+        .wpm-welcome-tab-login span{
+            background-color: #2B9973!important;
+        }
+        .wpm-welcome-tab-login:hover, .active .wpm-welcome-tab-login{
+            color: #2C8BB7!important;
+        }
+        .wpm-welcome-tab-login:hover span, .active .wpm-welcome-tab-login span{
+            background-color: #2C8BB7!important;
+        }
+
+        .wpm-welcome-tab-register{
+            color: #2B9973!important;
+        }
+        .wpm-welcome-tab-register span{
+            background-color: #2B9973!important;
+        }
+        .wpm-welcome-tab-register:hover, .active .wpm-welcome-tab-register{
+            color: #2C8BB7!important;
+        }
+        .wpm-welcome-tab-register:hover span, .active .wpm-welcome-tab-register span{
+            background-color: #2C8BB7!important;
+        }
+
+
+        /* */
+        .wpm-comment-button{
+            border-color: #!important;
+            color: #2C8BB7!important;
+            background-color: #F3F6F8!important;
+            border-radius: 3px!important;
+        }
+        .wpm-comment-button:hover{
+            border-color: #!important;
+            color: #FFFFFF!important;
+            background-color: #00608C!important;
+        }
+        /* */
+        .wpm-sign-in-button{
+            color: #FFFFFF!important;
+            background-color: #2C8BB7!important;
+            border-radius: 3px!important;
+        }
+        .wpm-sign-in-button:hover{
+            color: #FFFFFF!important;
+            background-color: #00608C!important;
+        }
+
+
+        /*  */
+        .wpm-button-ask{
+            color: #FFFFFF!important;
+            background-color: #2C8BB7!important;
+            border-radius: 3px!important;
+        }
+        .wpm-button-ask:hover{
+            color: #FFFFFF!important;
+            background-color: #00608C!important;
+        }
+        /*  */
+        .wpm-register-button{
+            color: #FFFFFF!important;
+            background-color: #2C8BB7!important;
+            border-radius: 3px!important;
+        }
+        .wpm-register-button:hover{
+            color: #FFFFFF!important;
+            background-color: #00608C!important;
+        }
+        /**/
+        .wpm-activate-pin-button{
+            color: #FFFFFF!important;
+            background-color: #2C8BB7!important;
+            border-radius: 3px!important;
+        }
+        .wpm-activate-pin-button:hover{
+            color: #FFFFFF!important;
+            background-color: #00608C!important;
+        }
+        /**/
+        .wpm-get-pin-code-button{
+            color: #FFFFFF!important;
+            background-color: #3F8BB9!important;
+            border-radius: 3px!important;
+        }
+        .wpm-get-pin-code-button:hover{
+            color: #FFFFFF!important;
+            background-color: #00608C!important;
+        }
+        /**/
+        .wpm-copy-pin-code-button{
+            border-color: #3F8BB9;
+            color: #3F8BB9;
+            background-color: #FFFFFF;
+            border-radius: 3px;
+        }
+        .wpm-copy-pin-code-button:hover, .wpm-pin-code-page .wpm-button.zeroclipboard-is-hover{
+            border-color: #3F8BB9!important;
+            color: #FFFFFF!important;
+            background-color: #3F8BB9!important;
+        }
+        /**/
+        .wpm-register-on-pin-button{
+            border-color: #3F8BB9;
+            color: #3F8BB9;
+            background-color: #FFFFFF;
+            border-radius: 3px;
+        }
+        .wpm-register-on-pin-button:hover{
+            border-color: #3F8BB9!important;
+            color: #FFFFFF!important;
+            background-color: #3F8BB9!important;
+        }
+        /**/
+        .wpm-top-admin-bar, .wpm-top-admin-bar .wpm-nav-bar, .wpm-top-admin-bar .nav-menu-mobile, .wpm-top-admin-bar .toggle-mobile-menu-wrap{
+            background-color: #222222!important;
+        }
+        .wpm-top-admin-bar a{
+            color: #FFFFFF!important;
+            background-color: #222222!important;
+        }
+        .wpm-top-admin-bar a:hover{
+            color: #2EA2CC!important;
+            background-color: #333333!important;
+        }
+        .wpm-top-admin-bar .menu-toggle span{
+            background-color: #FFFFFF;
+        }
+
+        /* comments */
+        .comment-image > a{
+            border-color: #D3D9DF;
+        }
+        /* preloader */
+        #preloader_1 span{
+            background: #76D6B6!important;
+        }
+        @keyframes preloader_1 {
+            0% {height:5px;transform:translateY(0px);background:#76D6B6!important;}
+            25% {height:30px;transform:translateY(15px);background:#76D6B6!important;}
+            50% {height:5px;transform:translateY(0px);background:#76D6B6!important;}
+            100% {height:5px;transform:translateY(0px);background:#76D6B6!important;}
+        }
+
+    </style>
+ 
+    <style type="text/css">.fancybox-margin{margin-right:14px;}</style>
+</head>
+<body class="archive tax-wpm-category term-uroki term-98 logged-in admin-bar no-customize-support et_monarch et_bloom et_pb_button_helper_class et_fixed_nav et_show_nav et_hide_primary_logo et_hide_fixed_logo et_cover_background et_secondary_nav_enabled et_secondary_nav_only_menu et_pb_gutter windows et_pb_gutters3 et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_pb_footer_columns4 et_header_style_left et_right_sidebar et_divi_theme chrome">
+<div style="height: 32px"></div>
+<link rel="stylesheet" type="text/css" media="all" id="homework_response_css-css" href="css/homework-response.css">
+		
+<div class="container container-content-wrap">
+<div class="row">
+  <div class="col-md-9 content-col">
+      <div class="wpm-content-wrap">
+                       <div class="loader" style="height: 5103px; position: relative; display: none;">
+                            <div id="preloader_1">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                            <p class="loader-text">Загрузка...</p>
+                        </div>
+<link rel="stylesheet" type="text/css" media="all" id="editor_css-css" href="css/editor-frontend.css">
+
+                <style type="text/css">
+                    .wpm-content {
+                        -webkit-user-select: none;
+                        -moz-user-select: -moz-none;
+                        -ms-user-select: none;
+                        user-select: none;
+                    }
+                </style>
+
+<div class="wpm-page-header-wrap">
+                <div class="wpm-page-header">
+                    <div class="info-row row">
+                        <div class="col-label col-lg-3 col-md-4 col-sm-4 col-xs-4">
+                            <span class="icon-pencil"></span>
+                            Название                        </div>
+                        <div class="col-info col-lg-9 col-md-8 col-sm-8 col-xs-8">
+                            <h1 class="title">Урок 6. Мой супруг</h1>
+                        </div>
+                    </div>
+                                        <div class="info-row row">
+                        <div class="col-label col-lg-3 col-md-4 col-sm-4 col-xs-4">
+                            <span class="icon-file"></span>
+                            Краткое описание                        </div>
+                        <div class="col-info col-lg-9 col-md-8 col-sm-8 col-xs-8">
+                            <div class="description">
+                                Практика «Письмо Супругу»                            </div>
+                        </div>
+                    </div>
+                                                                <div class="info-row row">
+                            <div class="col-label col-xs-12">
+							<a href="index.htm">
+                                                                                                <button class="wpm-button back-button pull-right">Вернуться к списку</button>
+							</a>	
+                            </div>
+                        </div>
+                                    </div>
+            </div>
+            <div class="wpm-content wpm-content-text">
+                <h3 style="text-align: center;"><span style="font-family: georgia, palatino, serif; font-size: 30pt; color: #993366;"><b><i>Практика ДНЯ</i></b></span></h3>
+<p style="text-align: center;"><strong><span style="font-family: georgia, palatino, serif; font-size: 14pt; color: #333399;">(Рекомендации по работе с кармическими событиями&nbsp;во время кармического коридора)</span></strong></p>
+
+<p style="text-align: center;">
+<span style="background-color: #ffff00;">
+ <strong>
+  <span style="font-family: georgia, palatino, serif; font-size: 20pt;">
+   <a style="background-color: #ffff00;" href="https://drive.google.com/file/d/1ZA5cQ7bBpXY4dIFJntOHbPIGff5yhv8q/view" target="_blank">ТЕХНИКА ТОЧКА ОБНУЛЕНИЯ, 
+   </a>
+  </span>
+ </strong>
+</span>
+</p>
+<p style="text-align: center;">
+ <span style="background-color: #ffff00;">
+  <strong>
+   <span style="font-family: georgia, palatino, serif; font-size: 20pt;">
+    <a style="background-color: #ffff00;" href="https://drive.google.com/file/d/1ZA5cQ7bBpXY4dIFJntOHbPIGff5yhv8q/view" target="_blank">если день совпадает с СРЕДИННОЙ ТОЧКОЙ
+    </a>
+   </span>
+  </strong>
+ </span>
+</p>
+<!-- *** -->
+
+<p><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><span style="font-weight: 400;">Сегодня у нас с тобой ВАЖНЫЙ&nbsp;</span><b>урок&nbsp;</b><span style="font-weight: 400;">и, наверное, один из самых непростых….Я буду рассказывать и ты поймешь почему. </span></span></p>
+<p><em><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><span style="font-weight: 400;">Из
+ прошлых воплощений душа человека помнит своих друзей и врагов и, 
+соответственно, передает нам свой опыт в виде необъяснимой симпатии или 
+отторжения разных людей. </span></span></em></p>
+<p><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><span style="font-weight: 400;">Возможно,
+ что в начале (при первой встрече) две души связывает простое физическое
+ влечение тел, одно из которых мужское, а другое - женское. Но при это 
+часто Души встречающихся людей узнают друг друга, хотя их тела 
+совершенно чужды и незнакомы.</span></span></p>
+<p><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><span style="font-weight: 400;">Ваша
+ карма тесно связана с отношениями в Любви. Множество связей в настоящем
+ отражают те узы, что соединяли вас в прошлом. Если связь была 
+негативной, то в настоящем вы вместе можете постараться изменить карму и
+ перевести ее на положительный уровень. Если вы испытываете трудности в 
+общении с кем-либо, значит, в прошлом вы вместе создали негативную 
+карму. Если же вы были близки, эта связь не прервется и в настоящем. </span></span></p>
+<p style="text-align: center;"><span style="color: #993366; font-size: 18pt;"><strong><em><span style="font-family: georgia, palatino, serif;">Итак, сегодня мы поговорим о Супругах</span></em></strong></span></p>
+<p><strong><span style="font-size: 15pt; font-family: georgia, palatino, serif;">Супруги
+ - это люди, которым предстоит строить вместе свою судьбу. Кармическая 
+зависимость от супруга гораздо больше, чем зависимость от родителей. 
+Комплексы, страхи и неблагоприятные семейные условия детства накладывают
+ неизгладимые впечатления на маленького человека, однако это все можно 
+преодолеть, проведя определенную работу. Трудно, но выполнимо. </span></strong></p>
+<p><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><span style="font-weight: 400;">Неудача
+ в супружестве переживается зачастую гораздо тяжелее, чем "трудное" 
+детство. Она воспринимается как крушение планов и надежд молодости. Не 
+всем удается найти силы, чтобы все начать сначала, подчас уже в не 
+молодом возрасте. Совместные дети продолжают связывать супругов и в 
+разводе.</span></span></p>
+<p><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><span style="font-weight: 400;">Сумеем
+ или не сумеем мы выполнить все предназначенное нам по жизни, сумеем ли 
+построить свою судьбу и достичь всего желаемого - как часто это целиком и
+ полностью зависит от нашей "второй половины"! </span></span></p>
+<p><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><span style="font-weight: 400;">Если
+ спустя несколько лет ваш брак кажется вам невозможным или по крайней 
+мере странным,подождите винить судьбу в несправедливости к вам, лучше 
+постарайтесь вспомнить себя в тот момент вашей жизни, когда вы встретили
+ вашего нынешнего супруга.</span></span></p>
+<p><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><span style="font-weight: 400;">В тот момент какая-то важная вибрационная характеристика ваших двух энергий точно совпала. Какая?</span></span></p>
+<p><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><span style="font-weight: 400;">В
+ гармоничном браке единение энергий супругов сопровождается 
+взаимопомощью в отработке кармы друг друга. Гармоничная энергия двоих 
+имеет огромную созидательную силу и создает благоприятный резонанс во 
+всех областях жизни супругов.</span></span></p>
+<p><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><span style="font-weight: 400;">Если
+ же, напротив, отношения супругов недостаточно гармоничны: они часто 
+ссорятся, с трудом понимают потребности друг друга, испытывают 
+раздражение и даже злобу, - то в этом случае объединение их кармических 
+энергий не столь благоприятно, и даже возможны обмены болезнями.</span></span></p>
+<p style="text-align: center;"><em><span style="color: #993366;"><strong><span style="font-size: 17pt; font-family: georgia, palatino, serif;">Что делать в таких случаях? </span></strong></span></em></p>
+<p><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><span style="font-weight: 400;">Вы
+ выбрали человека себе в супруги, а теперь он (или она) вас 
+категорически не устраивает. Но вы сами выбрали - значит, этот человек 
+чему-то соответствовал? Получается, что вы выбрали то, чему 
+соответствовали сами в тот момент! Теперь нужно разобраться, зачем вас 
+свела судьба. Что вы должны дать друг другу, чему научить и научиться 
+через вашу встречу.</span></span></p>
+<p><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><span style="font-weight: 400;">Энергетические
+ отношения между супругами не знают границ. От супруга практически 
+невозможно "закрыться". Карма двоих срастается и становится общей. В 
+моменты близости ваши энергии прорастают друг в друга, вы питаете 
+партнера, а значит, себя... Вы чувствуете друг друга на расстоянии, вы 
+угадываете желания вашей "половины", потому что ваша энергия теперь 
+едина. Вам это уже не нравится? Но вам зачем-то это необходимо. </span></span></p>
+<p><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><span style="font-weight: 400;">Супруги
+ соединяются вместе, чтобы, помножив свои энергии, сделать новый шаг в 
+развитии. Энергия гармоничной супружеской пары так велика, что они 
+практически неуязвимы. Чуждые, дисгармоничные влияния могут вторгаться 
+лишь на время, энергия двоих вытесняет все мешающее, разрушает все 
+негативы…. </span></span></p>
+<p><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><span style="font-weight: 400;">Но
+ если вы на второй день или второй год после свадьбы обнаружили 
+серьезную дисгармонию в отношениях с супругом, значит, ваша задача - 
+сделать все, чтобы они стали как можно более гармоничными.</span></span></p>
+<p><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><span style="font-weight: 400;">Вы
+ делаете все возможное и невозможное, идете на компромиссы, находите 
+способы понять партнера и подстроиться к его особенностям. Вы стараетесь
+ понять, что вы должны изменить в себе, в чем заключалась ваша ошибка, 
+почему вы несчастливы в браке. Вы не можете просто взять и уйти. Супруг -
+ не случайный прохожий. (Даже если вы выбрали в супруги случайного 
+прохожего.) Это другой уровень кармических отношений. Судьба 
+спровоцировала вас на кармическую работу.</span></span></p>
+<p><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><span style="font-weight: 400;">Когда
+ вы ответите себе на все вопросы и совершите всю сложную душевную 
+работу, у вас появится ощущение пустоты. Не будет ни раздражения, ни 
+досады, не будет обиды. Тогда вы станете свободными, вы будете вправе 
+сделать выбор, вправе разорвать отношения, которые никому не приносят 
+радости. Но ваша кармическая работа должна быть выполнена "на все сто", 
+нельзя обмануть себя. Проблема решена, когда уходят эмоции и остается 
+разумное, светлое отношение ко всему происходящему.</span></span></p>
+<p><strong><span style="color: #993366;"><em><span style="font-size: 15pt; font-family: georgia, palatino, serif;">Супружество
+ - это опыт служения другому человеку. Это проверка способности любить и
+ сопереживать, способности принимать чужую точку зрения, прислушиваться к
+ ней, несмотря на любую разницу взглядов.</span></em></span></strong></p>
+<p><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><span style="font-weight: 400;">Как
+ счастливы бывают люди, когда, съев вместе пуд соли, они наконец-то 
+гармонично врастают друг в друга, принимая супруга таким, каков он есть,
+ любя всем сердцем его достоинства и его недостатки. Не нужно думать, 
+что это простое смирение перед жизнью или страх перед ней. Если люди 
+достигают гармонии, это всегда результат огромной внутренней работы 
+обоих. </span></span></p>
+<p><em><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><b>Важно
+ помнить - я не даю вам рекомендаций, просто не имею на это права. И в 
+каждом конкретном случае непременно существует свое решение совместного 
+сосуществования. Но неуправляемый процесс обмена энергиями и разрушение 
+здоровья чуждыми вибрациями может стоить одному из супругов жизни, 
+поэтому помните о себе! </b></span></em></p>
+<p><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><span style="font-weight: 400;">Нельзя
+ просто терпеть. Если невозможно наладить семейные отношения и добиться 
+гармонии, лучше расстаться, дабы не усугублять карму друг друга. </span></span></p>
+<p><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><span style="font-weight: 400; font-size: 18pt; color: #993366;">Сегодня день для встречи с вашим Супругом. Сделайте после написания письма - медитацию - она тут: </span>
+<a href="https://drive.google.com/file/d/1pdgLsyLXdI3ApqfL7rXaxyX0LfkMawqa/view">
+<span style="font-weight: 400;">Супружеская медитация (аудио)</span></a><span style="font-weight: 400;"> &nbsp;</span></span></p>
+<p><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><span style="font-weight: 400;">Если у вас было несколько браков, сделайте несколько писем и медитаций.</span></span></p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><span style="color: #993366;"><em><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><b>ПРАКТИКА - ПИСЬМО СУПРУГУ</b></span></em></span></p>
+<p><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><span style="font-weight: 400;">Эту
+ практику можно сделать всем, кто пережил процесс расставания с супругом
+ и также тем, кто будучи сейчас в отношениях, чувствует обиду или 
+горечь. </span><span style="color: #993366;"><b>Отнеситесь к себе с 
+любовью, и помните если же вы со своим партнером пережили период 
+жестокого обращения, насилия, то эта техника не подходит. Здесь 
+требуется индивидуальная терапия!</b></span></span></p>
+<p><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><span style="font-weight: 400;">Для
+ начала Вам предстоит решать, хотите завершить расставание с прежним 
+партнером или нет? Быть может вам приятно внутри обижаться, или быть 
+равнодушной, или показывать свое превосходство, или демонстрировать, что
+ в вашей жизни все наладилось? Выбор всегда за вами. </span></span></p>
+<p><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><span style="font-weight: 400;">Но
+ именно этот партнер, мужчина был вам необходим именно в тот промежуток 
+времени вашей жизни. Ведь ваше внутреннее состояние продолжается в ваших
+ детях, в ваших делах, и в ваших новых отношениях. </span></span></p>
+<ol>
+<li><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><b>
+ Определите, на каком этапе переживания утраты вы сейчас находитесь? 
+Какие чувства испытываете, когда вспоминаете о бывшем партнере? </b></span></li>
+<li><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><b> Соответствует ли ваше расставание критериям завершенного расставания? </b></span></li>
+<li><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><b>
+ Что вам дал прежний партнер? Что бы именно без него вы никогда не 
+приобрели или не получили? За что вы можете быть ему благодарны? </b></span></li>
+<li><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><b> Напишите исцеляющее письмо (в случае, если ваши гнев и обида поутихли).</b></span></li>
+</ol>
+<p><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><b><span style="color: #993366;">Первое письмо. </span></b><span style="font-weight: 400;">Работа
+ начинается с того, что вы пишете первое письмо бывшему мужу, в котором 
+довольно подробно описываете детали своих претензий и обид, свои чувства
+ по поводу его вины или оскорбления и, как это все повлияло на вашу 
+жизнь. Письмо это вполне может содержать требования определенных форм 
+извинений, которые вы сочтете уместными для вашего обидчика. </span></span></p>
+<p><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><b><span style="color: #993366;">Второе письмо.</span> </b><span style="font-weight: 400;">После
+ этого вы пишете второе письмо — то, которое, по вашему мнению, бывший 
+партнер мог бы написать или действительно написал бы Вам, если бы унего 
+была такая возможность. В нем может быть изложено то, что он говорил 
+вам. То есть оно должно содержать ответ, которого вы, в общем-то, 
+страшитесь. </span></span></p>
+<p><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><span style="color: #993366;"><b>Третье и наиболее важное письмо.</b></span><span style="font-weight: 400;">
+ А теперь вам следует написать письмо, в котором вы излагаете ответ, 
+который вам необходим. Это, конечно воображаемый ответ от бывшего мужа. 
+Ответ, который он мог бы написать, если бы захотел взять на себя 
+ответственность за свои действия или поступки в отношении расставания 
+или развода. Иными словами, третье письмо — это то, которое более всего 
+вам и необходимо: письмо, которое вы, увы, не получили и вряд ли 
+когда-либо получите. Поэтому именно написание третьего письма может 
+стать важным этапом вашего освобождения — поскольку в нем вы можете 
+выразить (и получить) не достающие вам извинения, чувства поддержки и 
+сожаления о случившемся.</span></span></p>
+<h1 style="text-align: center;"></h1>
+<h1 style="text-align: center;"><span style="font-size: 32pt; font-family: georgia, palatino, serif;"><b><i>Про ОТНОШЕНИЯ:</i></b></span></h1>
+<p style="text-align: center;"><strong><span style="font-family: georgia, palatino, serif; font-size: 14pt; color: #ff0000;">(Рекомендации для тренинга КАРМА ВАШЕЙ ЛЮБВИ)</span></strong></p>
+<p style="text-align: center;"><span style="font-family: georgia, palatino, serif; font-size: 19pt;">Идеальные условия для создания отношений УЖЕ НАЧАЛИСЬ!!!</span></p>
+
+<div class="ps_text_box ps_text_box_4_1">
+<p class="aligncenter"></p>
+<p class="aligncenter"></p>
+	<iframe class="no_border" style="margin:0 auto; padding:0;" src="https://drive.google.com/file/d/1ss0ombonuhSS2or5fOM8YGUveSozlObB/preview" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" frameborder="0" height="360" width="640">
+    </iframe>
+<p></p>
+<p class="aligncenter"><a href="https://drive.google.com/file/d/18wJ3WkjSaDMWpOPKE1OBuMU9b0IT34xH/view" target="_blank"><span style="font-family: georgia, palatino, serif; font-size: 19pt;">ДНЕВНИК ОСОЗНАННОСТИ на тренинг КАРМА ВАШЕЙ ЛЮБВИ&nbsp;- нажмите чтобы скачать</span></a></p>
+</div>
+
+<h1 style="text-align: center;"><a href="https://drive.google.com/file/d/1P1meEV86M7pChjSy4vLs0gB6T05cl4qe/view?usp=sharing" target="_blank">&nbsp;</a></h1>
+<h1 style="text-align: center;"><em><strong><span style="font-family: georgia, palatino, serif; font-size: 32pt;">БОНУСНЫЕ ПРАКТИКИ :</span></strong></em></h1>
+<div class="ps_text_box ps_text_box_2_1">
+<p class="aligncenter"><span style="font-family: georgia, palatino, serif; font-size: 21pt;"><strong><span style="color: #993366;">ПРАКТИКА -&nbsp;</span></strong></span></p>
+<h1 class="clip_info-header iris_header iris_header--36" style="text-align: center;"><span class="clip_info-title">Что хотят мужчины: Сексуальная энергия в партнерстве</span></h1>
+<p class="aligncenter"></p>
+	<iframe class="no_border" style="margin:0 auto; padding:0;" src="https://drive.google.com/file/d/1u49FcLQ_njp79zQdxuUIpsc-eJixWQt4/preview" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" frameborder="0" height="360" width="640">
+    </iframe>
+<p></p>
+</div>
+  </div>
+    </div>
+      </div>
+        </div>
+          </div>
+</body></html>

@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="ru-RU" xmlns:og="http://ogp.me/ns#" itemscope="" itemtype="http://schema.org/Article" class=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/png" href="img/favicon-8.png">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>Описание | Уроки</title>
+    <!-- wpm_enqueue_styles --> 
+<link rel="stylesheet" type="text/css" media="all" id="wpm-bootstrap-css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" media="all" id="wpm-base-style-css" href="css/base-styles.css">
+<link rel="stylesheet" type="text/css" media="all" id="wpm-protected-style-css" href="css/base-protected-page.css">
+<link rel="stylesheet" type="text/css" media="all" id="wpm-mediaelement-css" href="css/mediaelementplayer.css">
+<link rel="stylesheet" type="text/css" media="all" id="wpm-owl-css" href="css/owl.css">
+<link rel="stylesheet" type="text/css" media="all" id="wpm-mediaelement-skins-css" href="css/wpm-skins.css">
+    <style type="text/css">
+        body{
+            background-color: #F7F8F9;
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-image: url('img/bg.jpg');
+            background-attachment:  fixed;
+        }
+        .wpm-button {
+            border-radius: 3px !important;
+        }
+        .wpm-comments-wrap {
+            border-radius: 3px;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            -khtml-border-radius: 3px;
+            background-color: #FFFFFF;
+            border: 1px solid #D3D9DF;
+        }
+
+        .wpm-content-inner-wrap {
+            background-color: #FFFFFF;
+            border: 1px solid #D3D9DF;
+            border-radius: 3px;
+        }
+        .wpm-content-wrap .loader, .loader {
+            border: 1px solid #D3D9DF!important;
+            background-color: #FFFFFF!important;
+        }
+        .table-head, tr.table-head td {
+            background-color: #7F8399;
+            color: #FFFFFF;
+        }
+
+        .wpm-page-header{
+            background-color: #FBFCFC;
+            border-color: #997D46;
+            border-radius: 3px;
+
+        }
+        .wpm-page-header .title{
+            color: #000000!important;
+        }
+        .wpm-page-header .description{
+            color: #4A5363!important;
+        }
+        .wpm-page-header .col-label, .wpm-page-header .info-row [class^="icon-"], .wpm-page-header .info-row [class*=" icon-"]{
+            color: #99723F!important;
+        }
+        .col-info .description, .col-info .title{
+            border-color: #997D46;
+            color: #;
+        }
+        .homework-title, #comments-title{
+            border-color: #D3D9DF;
+        }
+
+        .table-head [class^="icon-"], .table-head [class*=" icon-"] {
+            color: #FFFFFF;
+        }
+
+        .post-row{
+            border-bottom: 1px solid #D3D9DF;
+        }
+        .post-row:nth-child(even) {
+            background-color: #FFFFFF;
+            color: #677C8A;
+        }
+        .post-row:nth-child(even):hover{
+            background-color: #FFFFFF;
+            color: #343D43;
+        }
+        .post-row:nth-child(odd) {
+            background-color: #F3F6F8;
+            color: #677C8A;
+        }
+        .post-row:nth-child(odd):hover{
+            background-color: #F3F6F8;
+            color: #343D43;
+        }
+        /* content */
+        .wpm-content{
+            border: 1px solid #D3D9DF;
+            background-color: #FFFFFF;
+            border-radius: 3px;
+        }
+        .wpm-content-text{
+            color: #333333!important;
+        }
+        .wpm-content-text a{
+            color: #428BCA!important;
+        }
+        .wpm-content-text a:hover, .wpm-content-text a:active{
+            color: #2A6496!important;
+        }
+
+        .wpm-content-wrap .loader {
+            border-radius: 3px;
+        }
+
+        /* menu */
+        .sidebar-col{
+            font-size: 14px;
+        }
+
+        .main-menu, .header-content, .footer-content{
+            background-color: #FFFFFF;
+            border-color: #D3D9DF;
+            border-radius: 3px;
+        }
+
+        .main-menu li > a, .main-menu .children li:first-child > a{
+            border-color: #D3D9DF;
+        }
+        .main-menu li:last-child .children li:first-child > a, .main-menu > li > ul li:last-child{
+            border-color: #D3D9DF;
+        }
+
+
+        .main-menu .plus{
+            border-color: #D3D9DF;
+            color: #D3D9DF;
+        }
+        .main-menu .plus:hover, .main-menu .current-cat > .plus{
+            border-color: #2C8BB7;
+            color: #2C8BB7;
+        }
+        .main-menu > li > a{
+            color: #000000 !important;
+            font-weight: normal;
+        }
+        .main-menu > li > a:hover{
+            color: #2C8BB7 !important;
+        }
+
+        .main-menu .current-cat > a, .main-menu .current_page_item > a {
+            color: #2B9973 !important;
+                    }
+
+        .main-menu .children a{
+            color: #919191 !important;
+            font-weight: normal;
+        }
+        .main-menu .children a:hover{
+            color: #2C8BB7 !important;
+        }
+
+        .main-menu .children .current-cat > a {
+            color: #2B9973 !important;
+        }
+        /* buttons */
+        .show-content{
+            border-color: #B73B8E;
+            color: #2C8BB7;
+            background-color: #F3F6F8;
+            border-radius: 3px;
+        }
+        .show-content:hover, .post-row:hover .show-content{
+            border-color: #2C8BB7;
+            color: #FFFFFF;
+            background-color: #2C8BB7;
+        }
+        .no-access{
+            border-color: #677C8A;
+            color: #677C8A;
+            background-color: #F3F6F8;
+            border-radius: 3px;
+        }
+        .no-access:hover, .post-row:hover .no-access{
+            border-color: #677C8A;
+            color: #FFFFFF;
+            background-color: #677C8A;
+        }
+        .back-button{
+            border-color: #2C8BB7;
+            color: #2C8BB7;
+            background-color: #F3F6F8;
+            border-radius: 3px;
+        }
+        .back-button:hover{
+            border-color: #2C8BB7;
+            color: #FFFFFF;
+            background-color: #2C8BB7;
+        }
+        /* */
+        .wpm-homework-respond-button{
+            border-color: #2C8BB7!important;
+            color: #2C8BB7!important;
+            background-color: #F3F6F8!important;
+            border-radius: 3px!important;
+        }
+        .wpm-homework-respond-button:hover{
+            border-color: #2C8BB7!important;
+            color: #FFFFFF!important;
+            background-color: #2C8BB7!important;
+        }
+        /* */
+        .wpm-respond-popup-button{
+            color: #FFFFFF!important;
+            background-color: #2C8BB7!important;
+            border-radius: 3px!important;
+        }
+        .wpm-respond-popup-button:hover{
+            color: #FFFFFF!important;
+            background-color: #00608C!important;
+        }
+
+        /* */
+        .wpm-homework-edit-button{
+            border-color: #2C8BB7!important;
+            color: #2C8BB7!important;
+            background-color: #F3F6F8!important;
+            border-radius: 3px!important;
+        }
+        .wpm-homework-edit-button:hover{
+            border-color: #2C8BB7!important;
+            color: #FFFFFF!important;
+            background-color: #2C8BB7!important;
+        }
+        /* */
+        .wpm-homework-edit-popup-button{
+            color: #FFFFFF!important;
+            background-color: #2C8BB7!important;
+            border-radius: 3px!important;
+        }
+        .wpm-homework-edit-popup-button:hover{
+            color: #FFFFFF!important;
+            background-color: #00608C!important;
+        }
+        /* add file button*/
+        .wpm-homework-edit-popup-addfile-button{
+            color: #2C8BB7!important;
+            background-color: #FFFFFF!important;
+            border-color: #2C8BB7!important;
+            border-radius: 3px!important;
+        }
+        .wpm-homework-edit-popup-addfile-button:hover{
+            color: #FFFFFF!important;
+            background-color: #2C8BB7!important;
+            border-color: #2C8BB7!important;
+        }
+        /* upload file button */
+        .wpm-homework-edit-popup-upload-button{
+            color: #2C8BB7!important;
+            background-color: #F9F9F9!important;
+            border-color: #2C8BB7!important;
+            border-radius: 3px!important;
+        }
+        .wpm-homework-edit-popup-upload-button:hover{
+            color: #FFFFFF!important;
+            background-color: #2C8BB7!important;
+            border-color: #2C8BB7!important;
+        }
+        /* cancel upload button */
+        .wpm-homework-edit-popup-cancel-button{
+            color: #2C8BB7!important;
+            background-color: #F9F9F9!important;
+            border-color: #2C8BB7!important;
+            border-radius: 3px!important;
+        }
+        .wpm-homework-edit-popup-cancel-button:hover{
+            color: #FFFFFF!important;
+            background-color: #2C8BB7!important;
+            border-color: #2C8BB7!important;
+        }
+        /* delete file button */
+        .wpm-homework-edit-popup-delete-button{
+            color: #2C8BB7!important;
+            background-color: #F9F9F9!important;
+            border-color: #2C8BB7!important;
+            border-radius: 3px!important;
+        }
+        .wpm-homework-edit-popup-delete-button:hover{
+            color: #FFFFFF!important;
+            background-color: #2C8BB7!important;
+            border-color: #2C8BB7!important;
+        }
+        /* refresh comments */
+        .refresh-comments{
+            color: #428BCA!important;
+        }
+        .refresh-comments:hover{
+            color: #2F71A9!important;
+        }
+        /* refresh comments */
+        .wpm-welcome-tab-login{
+            color: #2B9973!important;
+        }
+        .wpm-welcome-tab-login span{
+            background-color: #2B9973!important;
+        }
+        .wpm-welcome-tab-login:hover, .active .wpm-welcome-tab-login{
+            color: #2C8BB7!important;
+        }
+        .wpm-welcome-tab-login:hover span, .active .wpm-welcome-tab-login span{
+            background-color: #2C8BB7!important;
+        }
+
+        .wpm-welcome-tab-register{
+            color: #2B9973!important;
+        }
+        .wpm-welcome-tab-register span{
+            background-color: #2B9973!important;
+        }
+        .wpm-welcome-tab-register:hover, .active .wpm-welcome-tab-register{
+            color: #2C8BB7!important;
+        }
+        .wpm-welcome-tab-register:hover span, .active .wpm-welcome-tab-register span{
+            background-color: #2C8BB7!important;
+        }
+
+
+        /* */
+        .wpm-comment-button{
+            border-color: #!important;
+            color: #2C8BB7!important;
+            background-color: #F3F6F8!important;
+            border-radius: 3px!important;
+        }
+        .wpm-comment-button:hover{
+            border-color: #!important;
+            color: #FFFFFF!important;
+            background-color: #00608C!important;
+        }
+        /* */
+        .wpm-sign-in-button{
+            color: #FFFFFF!important;
+            background-color: #2C8BB7!important;
+            border-radius: 3px!important;
+        }
+        .wpm-sign-in-button:hover{
+            color: #FFFFFF!important;
+            background-color: #00608C!important;
+        }
+
+
+        /*  */
+        .wpm-button-ask{
+            color: #FFFFFF!important;
+            background-color: #2C8BB7!important;
+            border-radius: 3px!important;
+        }
+        .wpm-button-ask:hover{
+            color: #FFFFFF!important;
+            background-color: #00608C!important;
+        }
+        /*  */
+        .wpm-register-button{
+            color: #FFFFFF!important;
+            background-color: #2C8BB7!important;
+            border-radius: 3px!important;
+        }
+        .wpm-register-button:hover{
+            color: #FFFFFF!important;
+            background-color: #00608C!important;
+        }
+        /**/
+        .wpm-activate-pin-button{
+            color: #FFFFFF!important;
+            background-color: #2C8BB7!important;
+            border-radius: 3px!important;
+        }
+        .wpm-activate-pin-button:hover{
+            color: #FFFFFF!important;
+            background-color: #00608C!important;
+        }
+        /**/
+        .wpm-get-pin-code-button{
+            color: #FFFFFF!important;
+            background-color: #3F8BB9!important;
+            border-radius: 3px!important;
+        }
+        .wpm-get-pin-code-button:hover{
+            color: #FFFFFF!important;
+            background-color: #00608C!important;
+        }
+        /**/
+        .wpm-copy-pin-code-button{
+            border-color: #3F8BB9;
+            color: #3F8BB9;
+            background-color: #FFFFFF;
+            border-radius: 3px;
+        }
+        .wpm-copy-pin-code-button:hover, .wpm-pin-code-page .wpm-button.zeroclipboard-is-hover{
+            border-color: #3F8BB9!important;
+            color: #FFFFFF!important;
+            background-color: #3F8BB9!important;
+        }
+        /**/
+        .wpm-register-on-pin-button{
+            border-color: #3F8BB9;
+            color: #3F8BB9;
+            background-color: #FFFFFF;
+            border-radius: 3px;
+        }
+        .wpm-register-on-pin-button:hover{
+            border-color: #3F8BB9!important;
+            color: #FFFFFF!important;
+            background-color: #3F8BB9!important;
+        }
+        /**/
+        .wpm-top-admin-bar, .wpm-top-admin-bar .wpm-nav-bar, .wpm-top-admin-bar .nav-menu-mobile, .wpm-top-admin-bar .toggle-mobile-menu-wrap{
+            background-color: #222222!important;
+        }
+        .wpm-top-admin-bar a{
+            color: #FFFFFF!important;
+            background-color: #222222!important;
+        }
+        .wpm-top-admin-bar a:hover{
+            color: #2EA2CC!important;
+            background-color: #333333!important;
+        }
+        .wpm-top-admin-bar .menu-toggle span{
+            background-color: #FFFFFF;
+        }
+
+        /* comments */
+        .comment-image > a{
+            border-color: #D3D9DF;
+        }
+        /* preloader */
+        #preloader_1 span{
+            background: #76D6B6!important;
+        }
+        @keyframes preloader_1 {
+            0% {height:5px;transform:translateY(0px);background:#76D6B6!important;}
+            25% {height:30px;transform:translateY(15px);background:#76D6B6!important;}
+            50% {height:5px;transform:translateY(0px);background:#76D6B6!important;}
+            100% {height:5px;transform:translateY(0px);background:#76D6B6!important;}
+        }
+
+    </style>
+    <!-- // theme custom style -->
+
+
+<style type="text/css">.fancybox-margin{margin-right:14px;}</style></head>
+<body class="archive tax-wpm-category term-opisanie term-97 logged-in admin-bar no-customize-support et_monarch et_bloom et_pb_button_helper_class et_fixed_nav et_show_nav et_hide_primary_logo et_hide_fixed_logo et_cover_background et_secondary_nav_enabled et_secondary_nav_only_menu et_pb_gutter windows et_pb_gutters3 et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_pb_footer_columns4 et_header_style_left et_right_sidebar et_divi_theme chrome">
+<div style="height: 32px"></div><link rel="stylesheet" type="text/css" media="all" id="homework_response_css-css" href="../../lessons-files/homework-response.css">
+        <div class="container container-content-wrap">
+              <div class="row">
+                <div class="col-md-9 content-col">
+
+                    <div class="wpm-content-wrap">
+                        <div class="wpm-content-inner-wrap">
+                                                            <div class="wpm-content term-desc wpm-content-text">
+<h1 style="text-align: center;"><span style="font-family: georgia, palatino, serif; font-size: 32pt; color: #993366;">Описание тренинга:</span></h1>
+<ol>
+<li><em><span style="font-size: 16pt; font-family: georgia, palatino, serif;">Активация воспоминаний</span></em></li>
+<li><em><span style="font-size: 16pt; font-family: georgia, palatino, serif;">Очищение кармического поля</span></em></li>
+<li><em><span style="font-size: 16pt; font-family: georgia, palatino, serif;">Упражнение «Мама»</span></em></li>
+<li><em><span style="font-size: 16pt; font-family: georgia, palatino, serif;">Медитация &nbsp; «встреча с Родителями»</span></em></li>
+<li><em><span style="font-size: 16pt; font-family: georgia, palatino, serif;">Практика «Письмо Супругу»</span></em></li>
+<li><em><span style="font-size: 16pt; font-family: georgia, palatino, serif;">Очищения энергетических связей</span></em></li>
+<li><em><span style="font-size: 16pt; font-family: georgia, palatino, serif;">Наши дети или Долг перед ребенком</span></em></li>
+<li><em><span style="font-size: 16pt; font-family: georgia, palatino, serif;">Работа с Родом</span></em></li>
+<li><em><span style="font-size: 16pt; font-family: georgia, palatino, serif;">Кармическое обучение и знания</span></em></li>
+<li><em><span style="font-size: 16pt; font-family: georgia, palatino, serif;">Пишем себе новую жизнь</span></em></li>
+<li><em><span style="font-size: 16pt; font-family: georgia, palatino, serif;">Установки в отношениях. Шаги их ТРАНСФОРМАЦИИ</span></em></li>
+<li><em><span style="font-size: 16pt; font-family: georgia, palatino, serif;">Кармические проработки</span></em></li>
+<li><em><span style="font-size: 16pt; font-family: georgia, palatino, serif;">Путешествие в кармические истоки рода</span></em></li>
+<li><em><span style="font-size: 16pt; font-family: georgia, palatino, serif;">Корневой уровень финансовых отношений</span></em></li>
+<li><em><span style="font-size: 16pt; font-family: georgia, palatino, serif;">Активация Изобилия на уровне ДНК</span></em></li>
+</ol>
+
+                                                               <div class="info-row row">
+                            <div class="col-label col-xs-12">
+							<a href="index.htm">
+                                                                                                <button class="wpm-button back-button pull-right">Вернуться к списку</button>
+							</a>	
+                            </div>
+                        </div>
+
+
+
+                                </div>
+                                                        <div class="wpm-content-inner">
+                                <div class="wpm-posts">
+                                                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+	</div>
+</body></html>

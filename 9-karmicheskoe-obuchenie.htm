@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="ru-RU" xmlns:og="http://ogp.me/ns#" itemscope="" itemtype="http://schema.org/Article" class="">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width">
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="img/favicon-8.png">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>Урок 9. Кармическое обучение и знания</title>
+
+<link rel="stylesheet" type="text/css" media="all" id="wpm-bootstrap-css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" media="all" id="wpm-base-style-css" href="css/base-styles.css">
+<link rel="stylesheet" type="text/css" media="all" id="wpm-protected-style-css" href="css/base-protected-page.css">
+<link rel="stylesheet" type="text/css" media="all" id="wpm-owl-css" href="css/owl.css">
+<link rel="stylesheet" type="text/css" media="all" id="wpm-mediaelement-skins-css" href="css/wpm-skins.css">
+<link rel="stylesheet" type="text/css" media="all" id="wpm-mediaelement-skins-css" href="css/boxes.css">
+
+    <style type="text/css">
+        body{
+            background-color: #F7F8F9;
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-image: url('img/bg.jpg');
+            background-attachment:  fixed;
+        }
+        .wpm-button {
+            border-radius: 3px !important;
+        }
+        .wpm-comments-wrap {
+            border-radius: 3px;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            -khtml-border-radius: 3px;
+            background-color: #FFFFFF;
+            border: 1px solid #D3D9DF;
+        }
+
+        .wpm-content-inner-wrap {
+            background-color: #FFFFFF;
+            border: 1px solid #D3D9DF;
+            border-radius: 3px;
+        }
+        .wpm-content-wrap .loader, .loader {
+            border: 1px solid #D3D9DF!important;
+            background-color: #FFFFFF!important;
+        }
+        .table-head, tr.table-head td {
+            background-color: #7F8399;
+            color: #FFFFFF;
+        }
+
+        .wpm-page-header{
+            background-color: #FBFCFC;
+            border-color: #997D46;
+            border-radius: 3px;
+
+        }
+        .wpm-page-header .title{
+            color: #000000!important;
+        }
+        .wpm-page-header .description{
+            color: #4A5363!important;
+        }
+        .wpm-page-header .col-label, .wpm-page-header .info-row [class^="icon-"], .wpm-page-header .info-row [class*=" icon-"]{
+            color: #99723F!important;
+        }
+        .col-info .description, .col-info .title{
+            border-color: #997D46;
+            color: #;
+        }
+        .homework-title, #comments-title{
+            border-color: #D3D9DF;
+        }
+
+        .table-head [class^="icon-"], .table-head [class*=" icon-"] {
+            color: #FFFFFF;
+        }
+
+        .post-row{
+            border-bottom: 1px solid #D3D9DF;
+        }
+        .post-row:nth-child(even) {
+            background-color: #FFFFFF;
+            color: #677C8A;
+        }
+        .post-row:nth-child(even):hover{
+            background-color: #FFFFFF;
+            color: #343D43;
+        }
+        .post-row:nth-child(odd) {
+            background-color: #F3F6F8;
+            color: #677C8A;
+        }
+        .post-row:nth-child(odd):hover{
+            background-color: #F3F6F8;
+            color: #343D43;
+        }
+        /* content */
+        .wpm-content{
+            border: 1px solid #D3D9DF;
+            background-color: #FFFFFF;
+            border-radius: 3px;
+        }
+        .wpm-content-text{
+            color: #333333!important;
+        }
+        .wpm-content-text a{
+            color: #428BCA!important;
+        }
+        .wpm-content-text a:hover, .wpm-content-text a:active{
+            color: #2A6496!important;
+        }
+
+        .wpm-content-wrap .loader {
+            border-radius: 3px;
+        }
+
+        /* menu */
+        .sidebar-col{
+            font-size: 14px;
+        }
+
+        .main-menu, .header-content, .footer-content{
+            background-color: #FFFFFF;
+            border-color: #D3D9DF;
+            border-radius: 3px;
+        }
+
+        .main-menu li > a, .main-menu .children li:first-child > a{
+            border-color: #D3D9DF;
+        }
+        .main-menu li:last-child .children li:first-child > a, .main-menu > li > ul li:last-child{
+            border-color: #D3D9DF;
+        }
+
+
+        .main-menu .plus{
+            border-color: #D3D9DF;
+            color: #D3D9DF;
+        }
+        .main-menu .plus:hover, .main-menu .current-cat > .plus{
+            border-color: #2C8BB7;
+            color: #2C8BB7;
+        }
+        .main-menu > li > a{
+            color: #000000 !important;
+            font-weight: normal;
+        }
+        .main-menu > li > a:hover{
+            color: #2C8BB7 !important;
+        }
+
+        .main-menu .current-cat > a, .main-menu .current_page_item > a {
+            color: #2B9973 !important;
+                    }
+
+        .main-menu .children a{
+            color: #919191 !important;
+            font-weight: normal;
+        }
+        .main-menu .children a:hover{
+            color: #2C8BB7 !important;
+        }
+
+        .main-menu .children .current-cat > a {
+            color: #2B9973 !important;
+        }
+        /* buttons */
+        .show-content{
+            border-color: #B73B8E;
+            color: #2C8BB7;
+            background-color: #F3F6F8;
+            border-radius: 3px;
+        }
+        .show-content:hover, .post-row:hover .show-content{
+            border-color: #2C8BB7;
+            color: #FFFFFF;
+            background-color: #2C8BB7;
+        }
+        .no-access{
+            border-color: #677C8A;
+            color: #677C8A;
+            background-color: #F3F6F8;
+            border-radius: 3px;
+        }
+        .no-access:hover, .post-row:hover .no-access{
+            border-color: #677C8A;
+            color: #FFFFFF;
+            background-color: #677C8A;
+        }
+        .back-button{
+            border-color: #2C8BB7;
+            color: #2C8BB7;
+            background-color: #F3F6F8;
+            border-radius: 3px;
+        }
+        .back-button:hover{
+            border-color: #2C8BB7;
+            color: #FFFFFF;
+            background-color: #2C8BB7;
+        }
+        /* */
+        .wpm-homework-respond-button{
+            border-color: #2C8BB7!important;
+            color: #2C8BB7!important;
+            background-color: #F3F6F8!important;
+            border-radius: 3px!important;
+        }
+        .wpm-homework-respond-button:hover{
+            border-color: #2C8BB7!important;
+            color: #FFFFFF!important;
+            background-color: #2C8BB7!important;
+        }
+        /* */
+        .wpm-respond-popup-button{
+            color: #FFFFFF!important;
+            background-color: #2C8BB7!important;
+            border-radius: 3px!important;
+        }
+        .wpm-respond-popup-button:hover{
+            color: #FFFFFF!important;
+            background-color: #00608C!important;
+        }
+
+        /* */
+        .wpm-homework-edit-button{
+            border-color: #2C8BB7!important;
+            color: #2C8BB7!important;
+            background-color: #F3F6F8!important;
+            border-radius: 3px!important;
+        }
+        .wpm-homework-edit-button:hover{
+            border-color: #2C8BB7!important;
+            color: #FFFFFF!important;
+            background-color: #2C8BB7!important;
+        }
+        /* */
+        .wpm-homework-edit-popup-button{
+            color: #FFFFFF!important;
+            background-color: #2C8BB7!important;
+            border-radius: 3px!important;
+        }
+        .wpm-homework-edit-popup-button:hover{
+            color: #FFFFFF!important;
+            background-color: #00608C!important;
+        }
+        /* add file button*/
+        .wpm-homework-edit-popup-addfile-button{
+            color: #2C8BB7!important;
+            background-color: #FFFFFF!important;
+            border-color: #2C8BB7!important;
+            border-radius: 3px!important;
+        }
+        .wpm-homework-edit-popup-addfile-button:hover{
+            color: #FFFFFF!important;
+            background-color: #2C8BB7!important;
+            border-color: #2C8BB7!important;
+        }
+        /* upload file button */
+        .wpm-homework-edit-popup-upload-button{
+            color: #2C8BB7!important;
+            background-color: #F9F9F9!important;
+            border-color: #2C8BB7!important;
+            border-radius: 3px!important;
+        }
+        .wpm-homework-edit-popup-upload-button:hover{
+            color: #FFFFFF!important;
+            background-color: #2C8BB7!important;
+            border-color: #2C8BB7!important;
+        }
+        /* cancel upload button */
+        .wpm-homework-edit-popup-cancel-button{
+            color: #2C8BB7!important;
+            background-color: #F9F9F9!important;
+            border-color: #2C8BB7!important;
+            border-radius: 3px!important;
+        }
+        .wpm-homework-edit-popup-cancel-button:hover{
+            color: #FFFFFF!important;
+            background-color: #2C8BB7!important;
+            border-color: #2C8BB7!important;
+        }
+        /* delete file button */
+        .wpm-homework-edit-popup-delete-button{
+            color: #2C8BB7!important;
+            background-color: #F9F9F9!important;
+            border-color: #2C8BB7!important;
+            border-radius: 3px!important;
+        }
+        .wpm-homework-edit-popup-delete-button:hover{
+            color: #FFFFFF!important;
+            background-color: #2C8BB7!important;
+            border-color: #2C8BB7!important;
+        }
+        /* refresh comments */
+        .refresh-comments{
+            color: #428BCA!important;
+        }
+        .refresh-comments:hover{
+            color: #2F71A9!important;
+        }
+        /* refresh comments */
+        .wpm-welcome-tab-login{
+            color: #2B9973!important;
+        }
+        .wpm-welcome-tab-login span{
+            background-color: #2B9973!important;
+        }
+        .wpm-welcome-tab-login:hover, .active .wpm-welcome-tab-login{
+            color: #2C8BB7!important;
+        }
+        .wpm-welcome-tab-login:hover span, .active .wpm-welcome-tab-login span{
+            background-color: #2C8BB7!important;
+        }
+
+        .wpm-welcome-tab-register{
+            color: #2B9973!important;
+        }
+        .wpm-welcome-tab-register span{
+            background-color: #2B9973!important;
+        }
+        .wpm-welcome-tab-register:hover, .active .wpm-welcome-tab-register{
+            color: #2C8BB7!important;
+        }
+        .wpm-welcome-tab-register:hover span, .active .wpm-welcome-tab-register span{
+            background-color: #2C8BB7!important;
+        }
+
+
+        /* */
+        .wpm-comment-button{
+            border-color: #!important;
+            color: #2C8BB7!important;
+            background-color: #F3F6F8!important;
+            border-radius: 3px!important;
+        }
+        .wpm-comment-button:hover{
+            border-color: #!important;
+            color: #FFFFFF!important;
+            background-color: #00608C!important;
+        }
+        /* */
+        .wpm-sign-in-button{
+            color: #FFFFFF!important;
+            background-color: #2C8BB7!important;
+            border-radius: 3px!important;
+        }
+        .wpm-sign-in-button:hover{
+            color: #FFFFFF!important;
+            background-color: #00608C!important;
+        }
+
+
+        /*  */
+        .wpm-button-ask{
+            color: #FFFFFF!important;
+            background-color: #2C8BB7!important;
+            border-radius: 3px!important;
+        }
+        .wpm-button-ask:hover{
+            color: #FFFFFF!important;
+            background-color: #00608C!important;
+        }
+        /*  */
+        .wpm-register-button{
+            color: #FFFFFF!important;
+            background-color: #2C8BB7!important;
+            border-radius: 3px!important;
+        }
+        .wpm-register-button:hover{
+            color: #FFFFFF!important;
+            background-color: #00608C!important;
+        }
+        /**/
+        .wpm-activate-pin-button{
+            color: #FFFFFF!important;
+            background-color: #2C8BB7!important;
+            border-radius: 3px!important;
+        }
+        .wpm-activate-pin-button:hover{
+            color: #FFFFFF!important;
+            background-color: #00608C!important;
+        }
+        /**/
+        .wpm-get-pin-code-button{
+            color: #FFFFFF!important;
+            background-color: #3F8BB9!important;
+            border-radius: 3px!important;
+        }
+        .wpm-get-pin-code-button:hover{
+            color: #FFFFFF!important;
+            background-color: #00608C!important;
+        }
+        /**/
+        .wpm-copy-pin-code-button{
+            border-color: #3F8BB9;
+            color: #3F8BB9;
+            background-color: #FFFFFF;
+            border-radius: 3px;
+        }
+        .wpm-copy-pin-code-button:hover, .wpm-pin-code-page .wpm-button.zeroclipboard-is-hover{
+            border-color: #3F8BB9!important;
+            color: #FFFFFF!important;
+            background-color: #3F8BB9!important;
+        }
+        /**/
+        .wpm-register-on-pin-button{
+            border-color: #3F8BB9;
+            color: #3F8BB9;
+            background-color: #FFFFFF;
+            border-radius: 3px;
+        }
+        .wpm-register-on-pin-button:hover{
+            border-color: #3F8BB9!important;
+            color: #FFFFFF!important;
+            background-color: #3F8BB9!important;
+        }
+        /**/
+        .wpm-top-admin-bar, .wpm-top-admin-bar .wpm-nav-bar, .wpm-top-admin-bar .nav-menu-mobile, .wpm-top-admin-bar .toggle-mobile-menu-wrap{
+            background-color: #222222!important;
+        }
+        .wpm-top-admin-bar a{
+            color: #FFFFFF!important;
+            background-color: #222222!important;
+        }
+        .wpm-top-admin-bar a:hover{
+            color: #2EA2CC!important;
+            background-color: #333333!important;
+        }
+        .wpm-top-admin-bar .menu-toggle span{
+            background-color: #FFFFFF;
+        }
+
+        /* comments */
+        .comment-image > a{
+            border-color: #D3D9DF;
+        }
+        /* preloader */
+        #preloader_1 span{
+            background: #76D6B6!important;
+        }
+        @keyframes preloader_1 {
+            0% {height:5px;transform:translateY(0px);background:#76D6B6!important;}
+            25% {height:30px;transform:translateY(15px);background:#76D6B6!important;}
+            50% {height:5px;transform:translateY(0px);background:#76D6B6!important;}
+            100% {height:5px;transform:translateY(0px);background:#76D6B6!important;}
+        }
+
+    </style>
+ 
+    <style type="text/css">.fancybox-margin{margin-right:14px;}</style>
+</head>
+<body class="archive tax-wpm-category term-uroki term-98 logged-in admin-bar no-customize-support et_monarch et_bloom et_pb_button_helper_class et_fixed_nav et_show_nav et_hide_primary_logo et_hide_fixed_logo et_cover_background et_secondary_nav_enabled et_secondary_nav_only_menu et_pb_gutter windows et_pb_gutters3 et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_pb_footer_columns4 et_header_style_left et_right_sidebar et_divi_theme chrome">
+<div style="height: 32px"></div>
+<link rel="stylesheet" type="text/css" media="all" id="homework_response_css-css" href="css/homework-response.css">
+		
+<div class="container container-content-wrap">
+<div class="row">
+  <div class="col-md-9 content-col">
+      <div class="wpm-content-wrap">
+                       <div class="loader" style="height: 5103px; position: relative; display: none;">
+                            <div id="preloader_1">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                            <p class="loader-text">Загрузка...</p>
+                        </div>
+<link rel="stylesheet" type="text/css" media="all" id="editor_css-css" href="css/editor-frontend.css">
+
+                <style type="text/css">
+                    .wpm-content {
+                        -webkit-user-select: none;
+                        -moz-user-select: -moz-none;
+                        -ms-user-select: none;
+                        user-select: none;
+                    }
+                </style>
+
+<div class="wpm-page-header-wrap">
+                <div class="wpm-page-header">
+                    <div class="info-row row">
+                        <div class="col-label col-lg-3 col-md-4 col-sm-4 col-xs-4">
+                            <span class="icon-pencil"></span>
+                            Название                        </div>
+                        <div class="col-info col-lg-9 col-md-8 col-sm-8 col-xs-8">
+                            <h1 class="title">Урок 9. Кармическое обучение и знания</h1>
+                        </div>
+                    </div>
+                                        <div class="info-row row">
+                        <div class="col-label col-lg-3 col-md-4 col-sm-4 col-xs-4">
+                            <span class="icon-file"></span>
+                            Краткое описание                        </div>
+                        <div class="col-info col-lg-9 col-md-8 col-sm-8 col-xs-8">
+                            <div class="description">
+                                Меняем сценарии. Путешествуем в Истории Рода                            </div>
+                        </div>
+                    </div>
+                                                                <div class="info-row row">
+                            <div class="col-label col-xs-12">
+							<a href="index.htm">
+                                                                                                <button class="wpm-button back-button pull-right">Вернуться к списку</button>
+							</a>	
+                            </div>
+                        </div>
+                                    </div>
+            </div>
+            <div class="wpm-content wpm-content-text">
+                <h3 style="text-align: center;"><span style="font-family: georgia, palatino, serif; font-size: 30pt; color: #993366;"><b><i>Практика ДНЯ</i></b></span></h3>
+<p style="text-align: center;"><strong><span style="font-family: georgia, palatino, serif; font-size: 14pt; color: #333399;">(Рекомендации по работе с кармическими событиями&nbsp;во время кармического коридора)</span></strong></p>
+
+<p style="text-align: center;">
+<span style="background-color: #ffff00;">
+ <strong>
+  <span style="font-family: georgia, palatino, serif; font-size: 20pt;">
+   <a style="background-color: #ffff00;" href="https://drive.google.com/file/d/1ZA5cQ7bBpXY4dIFJntOHbPIGff5yhv8q/view" target="_blank">ТЕХНИКА ТОЧКА ОБНУЛЕНИЯ, 
+   </a>
+  </span>
+ </strong>
+</span>
+</p>
+<p style="text-align: center;">
+ <span style="background-color: #ffff00;">
+  <strong>
+   <span style="font-family: georgia, palatino, serif; font-size: 20pt;">
+    <a style="background-color: #ffff00;" href="https://drive.google.com/file/d/1ZA5cQ7bBpXY4dIFJntOHbPIGff5yhv8q/view" target="_blank">если день совпадает с СРЕДИННОЙ ТОЧКОЙ
+    </a>
+   </span>
+  </strong>
+ </span>
+</p>
+<!-- *** -->
+
+<p><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><span style="font-weight: 400;">По-разному
+ складывается наша жизнь. От многих условий зависит, будет ли она 
+счастливой и конечно часто это зависит от кармы человека.</span></span></p>
+<p><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><span style="font-weight: 400;">Если
+ когда-то и где-то вы запустили разрушительный процесс, он непременно 
+вернется к вам, чтобы продемонстрировать, что именно вы нарушили в 
+гармонии мира. Мы живем не единожды на Земле, поскольку нам очень многое
+ необходимо постичь. От того, как быстро мы постигаем уроки, зависит 
+наша карма. От кармы зависит, какие задачи нам предстоит решить в 
+текущем воплощении.</span></span></p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><span style="font-size: 18pt; font-family: georgia, palatino, serif;"><b><i>Вы уже поняли как происходит кармическое обучение? </i></b></span></p>
+<p><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><b><i>Урок 1. </i></b><i><span style="font-weight: 400;">Вас оскорбляют. Вы ненавидите, предаете, убиваете, получаете удовольствие, затем глубокое разочарование и опустошение.</span></i></span></p>
+<p><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><b><i>Урок 2.</i></b><i><span style="font-weight: 400;">
+ Вас оскорбляют. Вы ненавидите, предаете. Убить не можете, не хотите, 
+испытываете странную тошноту. Это вспомнилось прошлое опустошение. И все
+ же мерзко.</span></i></span></p>
+<p><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><b><i>Урок 3. </i></b><i><span style="font-weight: 400;">Вас
+ оскорбляют. Вы ненавидите, но уже не мстите, испытывая странную жалость
+ к своему обидчику как к существу более низкого порядка. И все же 
+ненависть разъедает душу.</span></i></span></p>
+<p><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><b><i>Урок 4.</i></b><i><span style="font-weight: 400;"> Вас оскорбляют. Вы прощаете. Вам кажется нелепым злиться, вы чувствуете, что это глубоко вас не задевает.</span></i></span></p>
+<p><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><b><i>Урок 5.</i></b><i><span style="font-weight: 400;"> Вас никто не оскорбляет, никому не приходит это в голову. </span></i><b><i>Урок пройден. </i></b></span></p>
+<p><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><span style="font-weight: 400;">Вас все прославляют, вами восхищаются, вы лучше всех. А что делаете вы, какова ваша реакция? Это начался незаметно </span><b>новый урок</b><span style="font-weight: 400;">.
+ Как долго он будет длиться, зависит только от вас, от того, как быстро 
+вы его усвоите. Возгордитесь неимоверно или до вас сразу дойдет цена 
+славы?</span></span></p>
+<p><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><span style="font-weight: 400;">Конечно
+ же, это только упрощенная схема, в реальной жизни все намного сложнее, 
+но этот процесс однозначно определяет очень многое в вашей сегодняшней 
+жизни.</span></span></p>
+<p><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><span style="font-weight: 400;">Возможно, вам много досталось несчастий в этом воплощении, большое мужество потребовалось от вас, чтобы их преодолеть.</span></span></p>
+<p><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><span style="font-weight: 400;">Возможно, вам не дано счастье иметь семью и детей, вы никому не нужны в этом мире, одиночество поглощает ваше существо.</span></span></p>
+<p><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><span style="font-weight: 400;">Возможно,
+ вам не удалось скопить даже немного денег, приходится постоянно думать о
+ том, где заработать хоть каплю, чтобы прокормить себя.</span></span></p>
+<p><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><span style="font-weight: 400;">Возможно, не получилось в жизни найти свое дело, работу, приносящую удовлетворение.</span></span></p>
+<p><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><b>Счастливы ли вы? &nbsp;И это не праздный &nbsp;вопрос…</b></span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><span style="font-weight: 400;">У
+ очень многих людей далеко не столь безрадостная картина собственной 
+жизни, однако их недовольство огромно. Многие люди имеют солидный 
+достаток, семью и работу. Им не пришлось переживать особых несчастий в 
+жизни. Однако они обижены на судьбу, желают большего, завидуют и злятся,
+ редко радуются, совершенно невозможно прочесть в их глазах сияние 
+счастья. Почему?</span></span></p>
+<p><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><span style="font-weight: 400;">Оказывается,
+ не тяжелые кармические долги, не какие-то сложности или трудности в 
+жизни определяют, быть вам счастливым или не быть. </span></span></p>
+<p><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><span style="font-weight: 400;">Можно преодолевать множество кармических проблем и быть счастливым. </span></span></p>
+<p><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><span style="font-weight: 400;">Можно не иметь никаких внешних проблем и быть совершенно несчастным человеком. </span></span></p>
+<p><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><b>Само неумение радоваться жизни является по своей сути очень тяжелым кармическим испытанием - болезнь века так ее назовут вскоре.</b></span></p>
+<p><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><b>Отсутствие радости. Неумение жить счастливо в моменте. </b></span></p>
+<p><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><span style="font-weight: 400;">Это страшная кара.</span></span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><span style="font-weight: 400;">Вчитайтесь в эти строки еще раз. Так вот этим мы и займемся сегодня. </span></span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><span style="font-weight: 400;"><em><span style="color: #993366;"><strong>В чем твоя радость в жизни? </strong></span></em></span></span></p>
+<p><em><span style="font-size: 15pt; font-family: georgia, palatino, serif; color: #993366;"><strong>Что приносит тебе возбуждение и драйв? Что будит тебя по утрам и заставляет засыпать удовлетворенной? </strong></span></em></p>
+<p><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><span style="font-weight: 400;">Нет,
+ это не твои дети, как бы прекрасны они не были, не любовь, которая 
+может приносить разную гамму чувств, &nbsp;и уж точно не новая квартира и
+ пятая машина…..</span></span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><span style="font-weight: 400;">Длительное счастье приходит вместе с состоянием </span><b>творческого</b><span style="font-weight: 400;">
+ отношения к жизни. Творческий подъем - единственное условие 
+действительной радости: тогда обретаются новые силы, тело чувствует 
+легкость, развиваются возможности, появляется уверенность, надежда, что 
+все желаемое достижимо!</span></span></p>
+<p><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><b>Все это достижимо, когда ты идешь своим путем. Когда знаешь свое предназначение и &nbsp;свое Расписание! </b></span></p>
+<p><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><span style="font-weight: 400;">Состояние
+ творчества сродни любому состоянию восторга и счастья и ты точно умеешь
+ испытывать ощущение притока свежих сил, желание жить, созидать.</span></span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><span style="font-weight: 400;">Часто
+ ли вы повторяете про себя: "Господи, благодарю за то, что мне дана эта 
+прекрасная минута!" - т. е. сосредоточиваетесь на том, что в жизни 
+хорошо?! </span></span></p>
+<p><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><span style="font-weight: 400;">А
+ между тем это сосредоточение не что иное, как закрепление удачи, 
+удержание состояния притока сил, творческого подъема, а значит, </span><span style="color: #993366;"><b>счастья</b></span><span style="font-weight: 400;">.</span></span></p>
+<p><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><span style="font-weight: 400;">Состояние творчества - это </span><span style="color: #993366;"><b>деятельное отношение к своей жизни</b></span><span style="font-weight: 400;">, к своей карме, оптимистический настрой, </span><span style="color: #993366;"><b>любовь к жизни</b></span><span style="font-weight: 400;">, благодарность Создателю за каждый урок судьбы.</span></span></p>
+<p><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><span style="font-weight: 400;">Эту радость никто не может у вас отнять. На этом пути можно добиться любого желаемого счастья.</span></span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><span style="font-weight: 400;">Я
+ дам тебе несколько простых упражнений, как лучше определить свои 
+таланты на первом этапе. И это довольно просто. Если каждое утро ты 
+встаешь наполненной энергией и творческими идеями — ты на своём пути. 
+Если же ты ненавидешь звон будильника и поднимаешься с плохим 
+настроением — пора менять работу, скорее всего, это не ваше занятие и 
+искать свое призвание. Хотя и это можете узнать только вы сами. Здесь не
+ стоит слушать других, а лучше прислушаться к самим себе. Вот несколько 
+упражнений, которые помогут понять, чем нужно заниматься на самом деле:</span></span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><b><i>Упражнение 1. Вернуть детскую заинтересованность</i></b></span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 15pt; font-family: georgia, palatino, serif;">Ответьте
+ себе на вопрос, чем вы любили заниматься в детстве. Ещё до того как 
+ваши родители начали впихивать в вас установки, что «рисованием на хлеб 
+не заработаешь» или «танцы — это несерьёзно». Напишите три вещи, которые
+ вас реально увлекали в детстве. Это небольшая подсказка, куда вам 
+стремиться.</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><b><i>Упражнение 2. Ищем закономерности: 20 любимых занятий</i></b></span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 15pt; font-family: georgia, palatino, serif;">Теперь
+ давайте составим список из 20 ваших любимых занятий. Пусть некоторые из
+ них вам кажутся банальными (например, есть вкусную еду) — всё равно 
+пишите. Когда список будет готов, посмотрите внимательно на эти занятия.
+ Видите закономерности? Может быть, в вашем списке превалируют дела, 
+связанные с помощью людям? Или какие-то спортивные занятия? Или дела, 
+связанные со спокойной монотонной работой?</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 15pt; font-family: georgia, palatino, serif;">Подумайте - &nbsp;по каким группам можно разбить этот список. Он поможет вам понять, какой жизнью вы хотели бы жить.</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><b><i>Упражнение 3. Ваше идеальное окружение</i></b></span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><span style="font-weight: 400;">Если
+ в вас никто не верит, то поверить самому в себя становится ещё сложнее.
+ Именно поэтому среда, порождающая победителей, почти всегда состоит из 
+победителей. К сожалению, среда, в которой мы привыкли расти, не 
+располагает к созданию гениев.</span></span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><span style="font-weight: 400;">Представьте,
+ что мир за ночь изменился под ваши запросы. И наутро он будет наполнен 
+такими людьми, какими вы захотите. Какими будут эти люди? Какими 
+качествами они обладают? Может, все они творческие, или, наоборот, это 
+люди, сдавшие сопромат на пять с плюсом? Может, они всё делают быстро, 
+или, наоборот, вы бы хотели замедлить мир?</span></span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><span style="font-weight: 400;">Что вы узнали о себе и что вам нужно, чтобы полностью проявить себя?</span></span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><b><i>Упражнение 4. Девять жизней</i></b></span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><span style="font-weight: 400;">А
+ теперь представьте: у вас девять жизней. И в каждой из них вы сможете 
+стать тем, кем хотите. Как вы проживете эти девять жизней?</span></span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><span style="font-weight: 400;">Например,
+ представьте, что одну жизнь вы посвятите биологии, вторую — 
+путешествиям, третью — тому, чтобы завести большую семью с кучей детей, в
+ четвёртой станете президентом, а в пятой — певицей. Какая нравится 
+больше?</span></span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><span style="font-weight: 400;">Самое
+ важное тут понять следующее: если вам надо выбрать всего одну жизнь, 
+пусть даже ту, что вам больше всего нравится, вам всё равно будет не 
+хватать остальных. Потому что они — это ваша неотъемлемая часть. Нам в 
+головы вдолбили: «Определись!». И это печально. Каждая из ваших жизней 
+содержит что-то, что вы очень любите и в чём нуждаетесь. И вы можете 
+привнести это в свою жизнь. Потому что вы и есть сама жизнь.</span></span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><b><i>Упражнение 5. Мой идеальный день</i></b></span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><span style="font-weight: 400;">Сейчас
+ нам предстоит длинная прогулка по вашему воображению. Возьмите ручку и 
+листок, и погнали. Итак, каким вы видите свой идеальный день? Что вас 
+радует?</span></span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><span style="font-weight: 400;">Проживите
+ этот день в настоящем времени и во всех подробностях: где вы 
+просыпаетесь, какой это дом, кто лежит рядом с вами, что вы едите на 
+завтрак, какую одежду вы надеваете, что вы делаете, какой работой вы 
+заняты, дома или в офисе?</span></span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><span style="font-weight: 400;">Не
+ ограничивайте свою фантазию. Описывайте день, который бы проживали, 
+будь у вас абсолютная свобода, неограниченные средства и все силы и 
+умения, о которых вы только мечтали.</span></span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><span style="font-weight: 400;">После того как список составлен, поделите все ваши фантазии на три группы:</span></span></p>
+<p>&nbsp;</p>
+<ol>
+<li><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><span style="font-weight: 400;"> Что из этого вам необходимо как воздух.</span></span></li>
+</ol>
+<p>&nbsp;</p>
+<ol start="2">
+<li><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><span style="font-weight: 400;"> Что не обязательно, но всё равно очень хотелось бы иметь.</span></span></li>
+</ol>
+<p>&nbsp;</p>
+<ol start="3">
+<li><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><span style="font-weight: 400;"> Без чего можете обойтись.</span></span></li>
+</ol>
+<p>&nbsp;</p>
+<p><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><span style="font-weight: 400;">Наша
+ жизнь состоит из жизненного опыта, историй, ролей, отношений, 
+заработка, навыков…. Что-то из того, что мы называем своим выбором, на 
+самом деле является компромиссом. Что-то вообще случайность. Что-то из 
+этого необходимо и очень дорого. Но всё это — не вы.</span></span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 15pt; font-family: georgia, palatino, serif;"><b><i>Сосредоточьтесь на себе. Найдите то, что любите. И делайте то, что вы хотите.</i></b></span></p>
+<p>&nbsp;</p>
+<h1 style="text-align: center;"><span style="font-size: 32pt; font-family: georgia, palatino, serif;"><b><i>Про ОТНОШЕНИЯ:</i></b></span></h1>
+<p style="text-align: center;"><strong><span style="font-family: georgia, palatino, serif; font-size: 14pt; color: #ff0000;">(Рекомендации для тренинга КАРМА ВАШЕЙ ЛЮБВИ)</span></strong></p>
+<p style="text-align: center;"><span style="font-family: georgia, palatino, serif; font-size: 19pt;">Идеальные условия для создания отношений УЖЕ НАЧАЛИСЬ!!!</span></p>
+<div class="ps_text_box ps_text_box_4_1">
+
+<p class="ps_text_box_text" style="text-align: center;"><span style="font-family: georgia, palatino, serif; font-size: 17pt;">ВЕБИНАР КАРМА ВАШЕЙ ЛЮБВИ - часть&nbsp;<strong>четвертая&nbsp;</strong>-<a href="https://drive.google.com/file/d/1DI0sbxUUMarmFOjqFp7ZkwNLBfyWBuxx/view" target="_blank">КАРМИЧЕСКИЕ ЗАКОНЫ&nbsp;</a></span></p>
+<p class="aligncenter"></p>
+	<iframe class="no_border" style="margin:0 auto; padding:0;" src="https://drive.google.com/file/d/1DI0sbxUUMarmFOjqFp7ZkwNLBfyWBuxx/preview" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" frameborder="0" height="360" width="640">
+    </iframe>
+<p class="aligncenter"><a href="https://drive.google.com/file/d/1Xr_Yty-nJbjn86Qcr8A40p0KVSv6622e/view" target="_blank"><span style="font-family: georgia, palatino, serif; font-size: 19pt;">ДНЕВНИК ОСОЗНАННОСТИ на тренинг КАРМА ВАШЕЙ ЛЮБВИ&nbsp;- нажмите чтобы скачать</span></a></p>
+</div>
+<h1 style="text-align: center;"></h1>
+<h1 style="text-align: center;"></h1>
+<h1 style="text-align: center;"><em><strong><span style="font-family: georgia, palatino, serif; font-size: 32pt;">БОНУСНЫЕ ПРАКТИКИ :</span></strong></em></h1>
+<div class="ps_text_box ps_text_box_2_1">
+<p class="ps_text_box_text" style="text-align: center;"><span style="font-size: 21pt;"><strong><span style="font-family: georgia, palatino, serif; color: #993366;">Установки в отношениях. Шаги их ТРАНСФОРМАЦИИ</span></strong></span></p>
+<p class="aligncenter"></p><div class="wpm-video-size-wrap" style="">
+<div class="style-video wpm-video-vimeo style-4">
+<div class="embed-responsive embed-responsive-16by9" style="">
+   <iframe class="no_border" style="margin:0 auto; padding:0;" src="https://drive.google.com/file/d/1oylruCNORlTj8s-YNSgiSizCAh2Vnfiv/preview" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" frameborder="0" height="" width="">
+   </iframe>
+</div></div></div><p></p>
+</div>
+ </div>
+  </div>
+   </div>
+    </div>
+     </div>
+</body></html>
